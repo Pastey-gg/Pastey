@@ -1,6 +1,8 @@
 [submodule "oriana"]
 	path = oriana
 	url = https://github.com/Pastey-gg/Oriana
+	branch = main
 [submodule "echo"]
 	path = echo
 	url = https://github.com/Pastey-gg/Echo
+	branch = main
