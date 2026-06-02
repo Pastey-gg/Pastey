@@ -15,20 +15,18 @@ services:
       service: app
     ports:
       - "8080:8080"
-      - "${ORIANA_PORT:-8181}:8181"
 
   oriana:
     extends:
       file: ./oriana/docker-compose.yml
       service: app
-    network_mode: "service:echo"
+    networks:
+      - backend
     depends_on:
       - echo
-    ports: !reset []
 
 networks:
   backend:
 
 volumes:
   postgres_data:
-  valkey_data:
