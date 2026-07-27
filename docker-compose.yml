@@ -28,3 +28,7 @@ networks:
 
 volumes:
   postgres_data:
+
+secrets:
+  oriana_env:
+    file: ./oriana/.env
